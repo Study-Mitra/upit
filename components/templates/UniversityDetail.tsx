@@ -1,5 +1,6 @@
 import type { University } from '@/lib/models/universities';
 import type { CourseCategory } from '@/lib/models/course-categories';
+import ApplyCourseScope from '@/components/chrome/ApplyCourseScope';
 
 /**
  * College detail page, rendered from structured fields instead of one HTML blob.
@@ -38,6 +39,11 @@ export default function UniversityDetail({
 
   return (
     <main className="main">
+      {/* Scope the shared Apply form to this college's courses; without it the
+          enquiry dropdown offers every course on the site regardless of what
+          this college actually runs. */}
+      <ApplyCourseScope courses={courses.map((c) => c.name)} />
+
       {/* ---------------- hero ---------------- */}
       <div className="rbt-breadcrumb-default rbt-breadcrumb-style-3 version-02">
         <div className="breadcrumb-inner bg-primary" />

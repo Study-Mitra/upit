@@ -5,6 +5,7 @@ import { redirect } from 'next/navigation';
 import { getSession } from '@/lib/admin/auth';
 import { sanitizeHtml, sanitizeText } from '@/lib/admin/sanitize';
 import { renderUniversityCard } from '@/lib/admin/card';
+import { checkNoCollapse } from '@/lib/admin/guard';
 import {
   createUniversity,
   updateUniversity,
@@ -127,6 +128,13 @@ export async function updateCollege(_prev: SaveState, formData: FormData): Promi
 
   const fields = readFields(formData);
   if (!fields.name) return { error: 'Name is required.' };
+
+  // Backstop against the visual editor discarding theme markup it cannot model.
+  const collapse = checkNoCollapse(
+    (['about', 'approvalsHtml', 'keyFeatures', 'admissionProcess', 'careerProcess', 'reviews'] as const)
+      .map((f) => ({ label: f, before: existing[f] ?? '', after: fields[f] ?? '' }))
+  );
+  if (!collapse.ok) return { error: collapse.message };
 
   const merged: University = {
     ...existing,

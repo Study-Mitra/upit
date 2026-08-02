@@ -7,18 +7,25 @@ import { Table } from '@tiptap/extension-table';
 import TableRow from '@tiptap/extension-table-row';
 import TableCell from '@tiptap/extension-table-cell';
 import TableHeader from '@tiptap/extension-table-header';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 /**
- * WYSIWYG editor for one HTML section.
+ * Editor for one HTML field, with an HTML source mode and a visual mode.
  *
- * Tables are essential, not a nicety: the migrated college content stores Key
- * Features, Admission Process and Reviews as tables on several colleges, and an
- * editor without table support would silently destroy them on first save.
+ * WHY HTML IS THE DEFAULT
+ * A WYSIWYG can only keep markup its schema understands. This site's content is
+ * imported theme markup — nested divs, sections, custom classes, inline styles,
+ * icon tags — and tiptap silently discards every node it has no rule for. On a
+ * real blog page that meant 87,604 characters in and 15,718 characters out: an
+ * 82% loss, written straight back to the database on save with no warning.
  *
- * The value is mirrored into a hidden <textarea> so the surrounding <form> posts
- * it like any other field — no controlled-component plumbing through the Server
- * Action, and the form still works if the editor fails to mount.
+ * So the source view is the default and is exactly lossless. The visual editor is
+ * still available, because it is genuinely nicer for plain prose, but it is opt-in
+ * per field and says plainly what it will do before it does it.
+ *
+ * `html` is the single source of truth. The visual editor only writes to it after
+ * the user actually types — mounting alone must never rewrite the field, or
+ * merely opening the tab would destroy content.
  */
 export default function RichText({
   name,
@@ -29,17 +36,18 @@ export default function RichText({
   initialHtml: string;
   minHeight?: number;
 }) {
-  const [html, setHtml] = useState(initialHtml ?? '');
+  const original = initialHtml ?? '';
+  const [html, setHtml] = useState(original);
+  const [mode, setMode] = useState<'html' | 'visual'>('html');
   const [mounted, setMounted] = useState(false);
+  /** Set on the first real keystroke in the visual editor. */
+  const touched = useRef(false);
+
+  useEffect(() => setMounted(true), []);
 
   const editor = useEditor({
-    // Rendering the editor during SSR would mismatch on hydration.
     immediatelyRender: false,
     extensions: [
-      // StarterKit already bundles Link in this tiptap version; registering
-      // @tiptap/extension-link alongside it warns about a duplicate extension
-      // name and the second registration is ignored. Configure it through
-      // StarterKit instead.
       StarterKit.configure({ link: { openOnClick: false } }),
       Image,
       Table.configure({ resizable: false }),
@@ -47,28 +55,36 @@ export default function RichText({
       TableHeader,
       TableCell,
     ],
-    content: initialHtml ?? '',
-    onUpdate: ({ editor }) => setHtml(editor.getHTML()),
+    content: html,
+    onUpdate: ({ editor }) => {
+      // Ignore the update tiptap emits while loading content — only a genuine
+      // edit may replace the stored HTML with tiptap's normalised version.
+      if (!touched.current) return;
+      setHtml(editor.getHTML());
+    },
   });
 
-  useEffect(() => setMounted(true), []);
+  /** How much this field would lose if the visual editor took it over. */
+  const normalisedLength = mounted && editor ? editor.getHTML().length : 0;
+  const lossPct =
+    html.length > 0 && normalisedLength > 0
+      ? Math.max(0, Math.round((1 - normalisedLength / html.length) * 100))
+      : 0;
+  const lossy = lossPct >= 10;
 
-  if (!mounted || !editor) {
-    // Before mount, still post the original value so a save cannot blank it.
-    return (
-      <>
-        <textarea className="a-textarea" name={name} defaultValue={initialHtml ?? ''} />
-        <p className="a-hint">Loading editor…</p>
-      </>
-    );
-  }
-
-  const btn = (label: string, active: boolean, onClick: () => void, title?: string) => (
+  const tab = (id: 'html' | 'visual', label: string) => (
     <button
       type="button"
-      title={title ?? label}
-      className={active ? 'is-active' : undefined}
-      onClick={onClick}
+      className={mode === id ? 'is-active' : undefined}
+      onClick={() => {
+        if (id === 'visual' && editor) {
+          // Reload the editor from the truth each time the tab opens, so it
+          // never shows a stale document.
+          editor.commands.setContent(html, { emitUpdate: false });
+          touched.current = false;
+        }
+        setMode(id);
+      }}
     >
       {label}
     </button>
@@ -78,53 +94,76 @@ export default function RichText({
     <>
       <div className="a-editor">
         <div className="a-editor-toolbar">
-          {btn('B', editor.isActive('bold'), () => editor.chain().focus().toggleBold().run())}
-          {btn('I', editor.isActive('italic'), () => editor.chain().focus().toggleItalic().run())}
+          {tab('html', 'HTML')}
+          {tab('visual', 'Visual')}
           <span className="sep" />
-          {btn('P', editor.isActive('paragraph'), () =>
-            editor.chain().focus().setParagraph().run()
+
+          {mode === 'visual' && editor ? (
+            <>
+              <button type="button" onClick={() => { touched.current = true; editor.chain().focus().toggleBold().run(); }} className={editor.isActive('bold') ? 'is-active' : undefined}>B</button>
+              <button type="button" onClick={() => { touched.current = true; editor.chain().focus().toggleItalic().run(); }} className={editor.isActive('italic') ? 'is-active' : undefined}>I</button>
+              <span className="sep" />
+              <button type="button" onClick={() => { touched.current = true; editor.chain().focus().toggleHeading({ level: 4 }).run(); }}>H4</button>
+              <button type="button" onClick={() => { touched.current = true; editor.chain().focus().toggleBulletList().run(); }}>• List</button>
+              <button type="button" onClick={() => { touched.current = true; editor.chain().focus().toggleOrderedList().run(); }}>1. List</button>
+              <span className="sep" />
+              <button type="button" onClick={() => { touched.current = true; editor.chain().focus().insertTable({ rows: 3, cols: 2, withHeaderRow: true }).run(); }}>Table</button>
+              <button type="button" onClick={() => { touched.current = true; editor.chain().focus().addRowAfter().run(); }}>+Row</button>
+              <button type="button" onClick={() => { touched.current = true; editor.chain().focus().deleteRow().run(); }}>−Row</button>
+              <span className="sep" />
+              <button type="button" onClick={() => {
+                const url = window.prompt('Link URL', editor.getAttributes('link').href ?? '');
+                if (url === null) return;
+                touched.current = true;
+                if (url === '') editor.chain().focus().unsetLink().run();
+                else editor.chain().focus().setLink({ href: url }).run();
+              }}>Link</button>
+              <button type="button" onClick={() => {
+                const src = window.prompt('Image URL (paste a link — uploads are not used)');
+                if (!src) return;
+                touched.current = true;
+                editor.chain().focus().setImage({ src }).run();
+              }}>Image</button>
+            </>
+          ) : (
+            <span style={{ fontSize: 12, color: 'var(--a-muted)', padding: '4px 6px' }}>
+              Source view — edits are saved exactly as written.
+            </span>
           )}
-          {btn('H4', editor.isActive('heading', { level: 4 }), () =>
-            editor.chain().focus().toggleHeading({ level: 4 }).run()
-          )}
-          {btn('H5', editor.isActive('heading', { level: 5 }), () =>
-            editor.chain().focus().toggleHeading({ level: 5 }).run()
-          )}
-          <span className="sep" />
-          {btn('• List', editor.isActive('bulletList'), () =>
-            editor.chain().focus().toggleBulletList().run()
-          )}
-          {btn('1. List', editor.isActive('orderedList'), () =>
-            editor.chain().focus().toggleOrderedList().run()
-          )}
-          <span className="sep" />
-          {btn('Table', editor.isActive('table'), () =>
-            editor.chain().focus().insertTable({ rows: 3, cols: 2, withHeaderRow: true }).run()
-          , 'Insert a 3x2 table')}
-          {btn('+Row', false, () => editor.chain().focus().addRowAfter().run(), 'Add row below')}
-          {btn('+Col', false, () => editor.chain().focus().addColumnAfter().run(), 'Add column right')}
-          {btn('−Row', false, () => editor.chain().focus().deleteRow().run(), 'Delete row')}
-          {btn('−Col', false, () => editor.chain().focus().deleteColumn().run(), 'Delete column')}
-          <span className="sep" />
-          {btn('Link', editor.isActive('link'), () => {
-            const url = window.prompt('Link URL', editor.getAttributes('link').href ?? '');
-            if (url === null) return;
-            if (url === '') editor.chain().focus().unsetLink().run();
-            else editor.chain().focus().setLink({ href: url }).run();
-          })}
-          {btn('Image', false, () => {
-            const src = window.prompt('Image URL (paste a link — uploads are not used)');
-            if (src) editor.chain().focus().setImage({ src }).run();
-          })}
-          <span className="sep" />
-          {btn('Clear', false, () =>
-            editor.chain().focus().clearNodes().unsetAllMarks().run()
-          , 'Remove formatting')}
         </div>
-        <div style={{ minHeight }}>
-          <EditorContent editor={editor} />
-        </div>
+
+        {mode === 'html' ? (
+          <textarea
+            className="a-textarea"
+            value={html}
+            onChange={(e) => setHtml(e.target.value)}
+            style={{ minHeight, border: 0, borderRadius: 0, width: '100%' }}
+            spellCheck={false}
+          />
+        ) : (
+          <div style={{ minHeight }} onKeyDown={() => { touched.current = true; }}>
+            <EditorContent editor={editor} />
+          </div>
+        )}
       </div>
+
+      {mode === 'visual' && lossy ? (
+        <p className="a-msg a-msg-error" role="alert" style={{ marginTop: 8 }}>
+          <strong>Careful.</strong> This content uses layout the visual editor cannot
+          represent. Editing here would reduce it by about {lossPct}% (
+          {html.length.toLocaleString()} → {normalisedLength.toLocaleString()} characters)
+          and that loss is saved. Switch back to <strong>HTML</strong> unless you mean
+          to simplify this section.
+        </p>
+      ) : null}
+
+      {html.length !== original.length ? (
+        <p className="a-hint" style={{ marginTop: 6 }}>
+          {original.length.toLocaleString()} → {html.length.toLocaleString()} characters
+          {html.length < original.length * 0.8 ? ' — a large reduction; check before saving.' : ''}
+        </p>
+      ) : null}
+
       <textarea name={name} value={html} readOnly hidden />
     </>
   );

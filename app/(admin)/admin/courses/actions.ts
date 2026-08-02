@@ -5,6 +5,7 @@ import { redirect } from 'next/navigation';
 import { getDb } from '@/lib/mongodb';
 import { getSession } from '@/lib/admin/auth';
 import { sanitizeHtml, sanitizeText } from '@/lib/admin/sanitize';
+import { checkNoCollapse } from '@/lib/admin/guard';
 import { getCourse, type Course, type CourseDetailRow } from '@/lib/models/courses';
 
 export type SaveState = { error: string | null; ok?: boolean };
@@ -104,6 +105,14 @@ export async function updateCourse(_prev: SaveState, formData: FormData): Promis
 
   const fields = readFields(formData);
   if (!fields.name) return { error: 'Name is required.' };
+
+  // Backstop against the visual editor discarding theme markup it cannot model.
+  const collapse = checkNoCollapse([
+    { label: 'Description', before: existing.descriptionHtml ?? '', after: fields.descriptionHtml },
+    { label: 'FAQ', before: existing.faqHtml ?? '', after: fields.faqHtml ?? '' },
+    { label: 'Listing body', before: existing.bodyHtml ?? '', after: (fields as { bodyHtml?: string }).bodyHtml ?? existing.bodyHtml ?? '' },
+  ]);
+  if (!collapse.ok) return { error: collapse.message };
 
   const db = await getDb();
   // `bodyHtml` is removed when a course stops being a listing, so a stale body

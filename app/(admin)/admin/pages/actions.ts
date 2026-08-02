@@ -6,6 +6,7 @@ import { getDb } from '@/lib/mongodb';
 import { getSession } from '@/lib/admin/auth';
 import { sanitizeHtml, sanitizeText } from '@/lib/admin/sanitize';
 import { getPage } from '@/lib/models/pages';
+import { checkNoCollapse } from '@/lib/admin/guard';
 import { LOCKED_PAGE_FAMILY_SET } from '@/lib/admin/locked-pages';
 
 export type SaveState = { error: string | null; ok?: boolean };
@@ -36,6 +37,12 @@ export async function updatePage(_prev: SaveState, formData: FormData): Promise<
   if (!contentHtml.trim()) {
     return { error: 'Content is empty — refusing to blank the page. Reload and try again.' };
   }
+
+  // Backstop against the visual editor silently discarding theme markup.
+  const collapse = checkNoCollapse([
+    { label: 'Content', before: existing.contentHtml, after: contentHtml },
+  ]);
+  if (!collapse.ok) return { error: collapse.message };
 
   const db = await getDb();
   await db.collection(COLLECTION).updateOne(

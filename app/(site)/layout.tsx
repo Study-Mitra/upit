@@ -22,25 +22,37 @@ import WhatsAppFloat from '@/components/chrome/WhatsAppFloat';
  * @font-face and inject fallback metrics that shift text rendering.
  */
 
-/** Structured data lifted verbatim from the live <head>. */
+/**
+ * Structured data lifted from the live <head>, with the company details updated
+ * for the rebrand.
+ *
+ * The postal address is stored field-by-field here, and in a different format
+ * from the single string rendered in the header and footer, so
+ * scripts/rebrand.mjs cannot reach it with a string replacement — it is
+ * maintained by hand and must be updated alongside them. This is the address
+ * Google reads, so a stale value here outlives the visible one on the page.
+ *
+ * No literal old address is quoted above, so a grep for the previous details
+ * returns nothing once a move is complete.
+ */
 const JSONLD_ORGANIZATION = {
   '@context': 'https://schema.org',
   '@type': 'EducationalOrganization',
   name: 'UPIT College of Education',
   url: 'https://srmflexilearn.com',
-  logo: 'https://srmflexilearn.com/new-assets/img/vidyacampus_logo.png',
+  logo: 'https://srmflexilearn.com/new-assets/img/upit_logo.png',
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+91 9810504039',
+    telephone: '+91 9818031375',
     contactType: 'customer service',
     email: 'support@srmflexilearn.com',
   },
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'D70, Mahavir Enclave Part 1, Mahavir Enclave',
-    addressLocality: 'New Delhi',
+    streetAddress: 'A 1278, Mayur Vihar, Phase-III',
+    addressLocality: 'Delhi',
     addressRegion: 'Delhi',
-    postalCode: '110045',
+    postalCode: '110096',
     addressCountry: 'IN',
   },
   sameAs: [
@@ -90,7 +102,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link
           rel="shortcut icon"
           type="image/x-icon"
-          href="/new-assets/img/vidyacampus_logo.png"
+          href="/new-assets/img/upit_logo.png"
         />
         {/* Order is load-bearing: styles.css is last so it wins the cascade. */}
         {STYLESHEETS.map((href) => (

@@ -26,10 +26,10 @@ export default function Header() {
     {" "}
                       <li>
     {" "}
-                        <a href="tel:+91 9810504039">
+                        <a href="tel:+91 9818031375">
     {" "}
                           <i className="feather-phone"></i>
-    {" +91 9810504039 "}
+    {" +91 9818031375 "}
                         </a>
     {" "}
                       </li>
@@ -49,7 +49,7 @@ export default function Header() {
                         <a href="#">
     {" "}
                           <i className="feather-map-pin"></i>
-    {" D-70, 2nd FLOOR, MAIN PALAM DABRI ROAD, MAHAVIR ENCLAVE, NEW DELHI-110045. "}
+    {" A 1278, Mayur Vihar, Phase-III, Delhi-110096. "}
                         </a>
     {" "}
                       </li>
@@ -128,7 +128,7 @@ export default function Header() {
     {" "}
                   <a href="/">
     {" "}
-                    <img src="/new-assets/img/vidyacampus_logo.png" alt="logo" width="220" className="img-fluid" style={{ height: "auto", maxHeight: "65px", width: "auto", objectFit: "contain", transform: "scale(1.1)", transformOrigin: "left center" }} />
+                    <img src="/new-assets/img/upit_logo.png" alt="logo" width="220" className="img-fluid" style={{ height: "auto", maxHeight: "65px", width: "auto", objectFit: "contain", transform: "scale(1.1)", transformOrigin: "left center" }} />
     {" "}
                   </a>
     {" "}
@@ -138,7 +138,7 @@ export default function Header() {
     {" "}
                   <a href="/">
     {" "}
-                    <img src="/new-assets/img/vidyacampus_logo.png" alt="logo" width="220" className="img-fluid" style={{ height: "auto", maxHeight: "65px", width: "auto", objectFit: "contain", transform: "scale(1.1)", transformOrigin: "left center" }} />
+                    <img src="/new-assets/img/upit_logo.png" alt="logo" width="220" className="img-fluid" style={{ height: "auto", maxHeight: "65px", width: "auto", objectFit: "contain", transform: "scale(1.1)", transformOrigin: "left center" }} />
     {" "}
                   </a>
     {" "}

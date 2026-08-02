@@ -22,7 +22,7 @@ export default function Footer() {
     {" "}
                   <a href="/">
     {" "}
-                    <img src="/new-assets/img/vidyacampus_logo.png" width="200" className="img-fluid" style={{ height: "auto", maxHeight: "60px", width: "auto", objectFit: "contain" }} alt="logo" />
+                    <img src="/new-assets/img/upit_logo.png" width="200" className="img-fluid" style={{ height: "auto", maxHeight: "60px", width: "auto", objectFit: "contain" }} alt="logo" />
     {" "}
                   </a>
     {" "}
@@ -178,7 +178,7 @@ export default function Footer() {
     {" "}
                     <span>Phone:</span>
     {" "}
-                    <a href="tel:+91 9810504039">{" +91 9810504039 "}</a>
+                    <a href="tel:+91 9818031375">{" +91 9818031375 "}</a>
     {" "}
                   </li>
     {" "}
@@ -194,7 +194,7 @@ export default function Footer() {
     {" "}
                     <span>Address:</span>
     {" "}
-                    <a href="https://www.google.com/maps/search/?api=1&query=UPIT+Education%2C+D-70%2C+2nd+FLOOR%2C+MAIN+PALAM+DABRI+ROAD%2C+MAHAVIR+ENCLAVE%2C+NEW+DELHI-110045." target="_blank" rel="noopener noreferrer">{" D-70, 2nd FLOOR, MAIN PALAM DABRI ROAD, MAHAVIR ENCLAVE, NEW DELHI-110045. "}</a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=UPIT+Education%2C+A+1278%2C+Mayur+Vihar%2C+Phase-III%2C+Delhi-110096." target="_blank" rel="noopener noreferrer">{" A 1278, Mayur Vihar, Phase-III, Delhi-110096. "}</a>
     {" "}
                   </li>
     {" "}

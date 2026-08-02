@@ -18,7 +18,7 @@ export default function MobileMenu() {
     {" "}
                 <a href="/">
     {" "}
-                  <img src="/new-assets/img/vidyacampus_logo.png" alt="Logo" />
+                  <img src="/new-assets/img/upit_logo.png" alt="Logo" />
     {" "}
                 </a>
     {" "}
@@ -62,10 +62,10 @@ export default function MobileMenu() {
     {" "}
             <li>
     {" "}
-              <a href="tel:+91 9810504039">
+              <a href="tel:+91 9818031375">
     {" "}
                 <i className="feather-phone"></i>
-    {" +91 9810504039 "}
+    {" +91 9818031375 "}
               </a>
     {" "}
             </li>

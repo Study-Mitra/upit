@@ -108,7 +108,7 @@ export default function LeadModal() {
     {" "}
                       <div className="">
     {" "}
-                        <img src="/new-assets/img/vidyacampus_logo.png" alt="UPIT Logo" className="srm-modal-logo" />
+                        <img src="/new-assets/img/upit_logo.png" alt="UPIT Logo" className="srm-modal-logo" />
     {" "}
                       </div>
     {" "}

@@ -45,7 +45,7 @@ const JSONLD_ORGANIZATION = {
     '@type': 'ContactPoint',
     telephone: '+91 9818031375',
     contactType: 'customer service',
-    email: 'support@srmflexilearn.com',
+    email: 'support@upitcollege.com',
   },
   address: {
     '@type': 'PostalAddress',

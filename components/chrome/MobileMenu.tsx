@@ -52,10 +52,10 @@ export default function MobileMenu() {
     {" "}
             <li>
     {" "}
-              <a href="mailto:support@srmflexilearn.com">
+              <a href="mailto:support@upitcollege.com">
     {" "}
                 <i className="feather-mail"></i>
-    {" support@srmflexilearn.com "}
+    {" support@upitcollege.com "}
               </a>
     {" "}
             </li>

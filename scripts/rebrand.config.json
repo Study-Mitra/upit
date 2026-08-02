@@ -12,7 +12,11 @@
     "to": "9818031375",
     "_note": "Matched bare, so it also fixes '+91 9810504039' and the WhatsApp deep link wa.me/919810504039."
   },
-  "email": { "from": "support@srmflexilearn.com", "to": null },
+  "email": {
+    "from": "support@srmflexilearn.com",
+    "to": "support@upitcollege.com",
+    "_note": "Runs before the domain rule so the address is replaced whole, not left as support@upitcollege.com's domain being rewritten twice. Covers mailto: links too, since they embed the same string."
+  },
 
   "address": {
     "from": "D-70, 2nd FLOOR, MAIN PALAM DABRI ROAD, MAHAVIR ENCLAVE, NEW DELHI-110045",

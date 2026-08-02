@@ -186,7 +186,7 @@ export default function Footer() {
     {" "}
                     <span>E-mail:</span>
     {" "}
-                    <a href="mailto:support@srmflexilearn.com">{" support@srmflexilearn.com "}</a>
+                    <a href="mailto:support@upitcollege.com">{" support@upitcollege.com "}</a>
     {" "}
                   </li>
     {" "}

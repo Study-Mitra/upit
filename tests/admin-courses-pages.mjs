@@ -13,7 +13,7 @@ import bcrypt from 'bcryptjs';
 
 const BASE = process.argv[2] ?? process.env.LOCAL_ORIGIN ?? 'http://localhost:3000';
 const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const DB = process.env.MONGODB_DB ?? 'srmflexilearn';
+const DB = process.env.MONGODB_DB ?? 'upitcollege';
 const EMAIL = 'test-only@example.invalid';
 const PASSWORD = 'correct-horse-battery-staple';
 const SLUG = 'zz-test-course';

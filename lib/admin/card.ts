@@ -21,7 +21,7 @@ import type { University } from '@/lib/models/universities';
  *   .uni-logo                                          read by inline-08.js fallback
  *   .uni-name                                          read by inline-08.js fallback
  *   .compare-uni[data-id][data-logo][data-name]        the compare widget
- *   .srm-approval-badge                                approval pills
+ *   .upit-approval-badge                                approval pills
  */
 
 /** Escape for use in an HTML attribute value or text node. */
@@ -54,7 +54,7 @@ export function renderUniversityCard(u: University): string {
 
   const badgeHtml = badges.length
     ? `<span style="color:#d1d5db;">|</span>` +
-      badges.map((b) => `<span class="srm-approval-badge">${esc(b)}</span>`).join('')
+      badges.map((b) => `<span class="upit-approval-badge">${esc(b)}</span>`).join('')
     : '';
 
   // The `.course-grid-3` wrapper is included deliberately.

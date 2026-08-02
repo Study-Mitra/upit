@@ -9,7 +9,7 @@ import { cookies } from 'next/headers';
  * unavailable.
  */
 
-export const SESSION_COOKIE = 'srm_admin_session';
+export const SESSION_COOKIE = 'upit_admin_session';
 const MAX_AGE_SECONDS = 60 * 60 * 8; // 8 hours
 
 function secretKey(): Uint8Array {

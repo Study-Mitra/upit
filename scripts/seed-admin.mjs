@@ -16,7 +16,7 @@ import { MongoClient } from 'mongodb';
 import bcrypt from 'bcryptjs';
 
 const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const DB = process.env.MONGODB_DB ?? 'srmflexilearn';
+const DB = process.env.MONGODB_DB ?? 'upitcollege';
 const ENV_FILE = new URL('../.env.local', import.meta.url);
 
 /** Readable but strong: 24 chars from a no-ambiguous-characters alphabet. */
@@ -49,7 +49,7 @@ async function main() {
   const reset = args.includes('--reset');
   const emailArg = args[args.indexOf('--email') + 1];
   const email =
-    args.includes('--email') && emailArg ? emailArg : 'admin@srmflexilearn.com';
+    args.includes('--email') && emailArg ? emailArg : 'admin@upitcollege.com';
 
   const wroteSecret = await ensureSessionSecret();
 

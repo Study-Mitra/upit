@@ -3,19 +3,37 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port=3001",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@tiptap/extension-image": "^3.29.2",
+    "@tiptap/extension-link": "^3.29.2",
+    "@tiptap/extension-table": "^3.29.2",
+    "@tiptap/extension-table-cell": "^3.29.2",
+    "@tiptap/extension-table-header": "^3.29.2",
+    "@tiptap/extension-table-row": "^3.29.2",
+    "@tiptap/pm": "^3.29.2",
+    "@tiptap/react": "^3.29.2",
+    "@tiptap/starter-kit": "^3.29.2",
+    "bcryptjs": "^3.0.3",
+    "cheerio": "^1.2.0",
+    "jose": "^6.2.5",
+    "mongodb": "^7.5.0",
     "next": "16.2.12",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "sharp": "^0.35.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.62.0",
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "pixelmatch": "^7.2.0",
+    "pngjs": "^7.0.0",
     "typescript": "^5"
   }
 }

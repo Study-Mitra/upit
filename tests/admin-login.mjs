@@ -15,10 +15,10 @@ import bcrypt from 'bcryptjs';
 
 const BASE = process.argv[2] ?? process.env.LOCAL_ORIGIN ?? 'http://localhost:3000';
 const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const DB = process.env.MONGODB_DB ?? 'srmflexilearn';
+const DB = process.env.MONGODB_DB ?? 'upitcollege';
 const EMAIL = 'test-only@example.invalid';
 const PASSWORD = 'correct-horse-battery-staple';
-const REAL_ACCOUNT = 'admin@srmflexilearn.com';
+const REAL_ACCOUNT = 'admin@upitcollege.com';
 
 let failures = 0;
 function check(name, pass, detail) {
@@ -75,7 +75,7 @@ try {
   check('message is generic', /invalid email or password/i.test(err), err);
   check('still on the login page', /\/admin\/login/.test(page.url()), page.url());
   let cookies = await page.context().cookies();
-  check('no session cookie after failure', !cookies.some((c) => c.name === 'srm_admin_session'));
+  check('no session cookie after failure', !cookies.some((c) => c.name === 'upit_admin_session'));
 
   // --- unknown email: identical message, no account enumeration ---
   await signIn('nobody@example.invalid', PASSWORD);
@@ -87,7 +87,7 @@ try {
   await signIn(EMAIL, PASSWORD);
   check('redirected to the dashboard', /\/admin$/.test(page.url()), page.url());
   cookies = await page.context().cookies();
-  const session = cookies.find((c) => c.name === 'srm_admin_session');
+  const session = cookies.find((c) => c.name === 'upit_admin_session');
   check('session cookie set', !!session);
   check('session cookie is httpOnly', session?.httpOnly === true);
 

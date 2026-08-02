@@ -18,7 +18,7 @@
 import { MongoClient } from 'mongodb';
 
 const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const DB = process.env.MONGODB_DB ?? 'srmflexilearn';
+const DB = process.env.MONGODB_DB ?? 'upitcollege';
 const APPLY = process.argv.includes('--apply');
 
 function esc(value) {
@@ -49,7 +49,7 @@ function renderUniversityCard(u) {
 
   const badgeHtml = badges.length
     ? `<span style="color:#d1d5db;">|</span>` +
-      badges.map((b) => `<span class="srm-approval-badge">${esc(b)}</span>`).join('')
+      badges.map((b) => `<span class="upit-approval-badge">${esc(b)}</span>`).join('')
     : '';
 
   return `<div class="course-grid-3 mb-4">

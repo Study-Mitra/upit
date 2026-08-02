@@ -9,7 +9,7 @@ import { MongoClient, type Db } from 'mongodb';
  */
 
 const uri = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const dbName = process.env.MONGODB_DB ?? 'srmflexilearn';
+const dbName = process.env.MONGODB_DB ?? 'upitcollege';
 
 declare global {
   // eslint-disable-next-line no-var

@@ -15,7 +15,7 @@
 - **Do not modify `app/(admin)/admin.css`.** All 412 lines exist already; markup must match its class names (`.a-login`, `.a-shell`, `.a-sidebar`, `.a-card`, `.a-field`, `.a-input`, `.a-btn`, `.a-msg-error`, `.a-stat`, `.a-nav-link`, `.a-nav-count`, `.a-sidebar-footer`, `.a-header`, `.a-grid`).
 - **`redirect()` must be called OUTSIDE `try/catch`.** It throws `NEXT_REDIRECT`; calling it inside a `try` swallows the redirect. Per `node_modules/next/dist/docs/01-app/03-api-reference/04-functions/redirect.md`.
 - **Tests never import the TypeScript app code.** Verified: no script in this repo does, and no TS runner is installed (`tsx`/`ts-node` absent, and `--experimental-strip-types` does not exist on this Node v20.19.0). Test behaviour over HTTP with Playwright, or against Mongo directly — the two conventions already in use.
-- **Never reset the real admin password.** The seeded account is `admin@srmflexilearn.com` and only the user knows its password. Tests MUST create and delete their own throwaway account.
+- **Never reset the real admin password.** The seeded account is `admin@upitcollege.com` and only the user knows its password. Tests MUST create and delete their own throwaway account.
 - **Pass the dev-server origin to every test.** `next dev` walks up from 3000, and port 3000 on this machine often runs an unrelated project (AiSensy). Tests take a base URL argument and MUST refuse to run against the wrong app.
 - **Admin must not load site assets.** No `styles.css`, no vendor scripts, no site chrome inside `(admin)`.
 - **Login failures must be generic.** Always "Invalid email or password." — never reveal whether the email exists.
@@ -62,10 +62,10 @@ import bcrypt from 'bcryptjs';
 
 const BASE = process.argv[2] ?? process.env.LOCAL_ORIGIN ?? 'http://localhost:3000';
 const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const DB = process.env.MONGODB_DB ?? 'srmflexilearn';
+const DB = process.env.MONGODB_DB ?? 'upitcollege';
 const EMAIL = 'test-only@example.invalid';
 const PASSWORD = 'correct-horse-battery-staple';
-const REAL_ACCOUNT = 'admin@srmflexilearn.com';
+const REAL_ACCOUNT = 'admin@upitcollege.com';
 
 let failures = 0;
 function check(name, pass, detail) {
@@ -121,7 +121,7 @@ try {
   check('message is generic', /invalid email or password/i.test(err), err);
   check('still on the login page', /\/admin\/login/.test(page.url()), page.url());
   let cookies = await page.context().cookies();
-  check('no session cookie after failure', !cookies.some((c) => c.name === 'srm_admin_session'));
+  check('no session cookie after failure', !cookies.some((c) => c.name === 'upit_admin_session'));
 
   // --- unknown email: identical message, no enumeration ---
   await signIn('nobody@example.invalid', PASSWORD);
@@ -133,7 +133,7 @@ try {
   await signIn(EMAIL, PASSWORD);
   check('redirected to the dashboard', /\/admin$/.test(page.url()), page.url());
   cookies = await page.context().cookies();
-  const session = cookies.find((c) => c.name === 'srm_admin_session');
+  const session = cookies.find((c) => c.name === 'upit_admin_session');
   check('session cookie set', !!session);
   check('session cookie is httpOnly', session?.httpOnly === true);
 
@@ -212,7 +212,7 @@ export async function verifyCredentials(email: string, password: string): Promis
 }
 ```
 
-The seeded account uses the default lower-case `admin@srmflexilearn.com`, so the
+The seeded account uses the default lower-case `admin@upitcollege.com`, so the
 lower-cased lookup matches it. If a mixed-case address ever lands in the
 collection, normalise it with a one-off `updateOne` rather than removing this.
 
@@ -337,7 +337,7 @@ import { getSession } from '@/lib/admin/auth';
 import LoginForm from './LoginForm';
 
 export const metadata = {
-  title: 'Sign in — SRM Education Admin',
+  title: 'Sign in — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 
@@ -358,7 +358,7 @@ export default async function LoginPage({
   return (
     <div className="a-login">
       <div className="a-card">
-        <h1>SRM Education</h1>
+        <h1>UPIT College of Education</h1>
         <p className="sub">Sign in to manage colleges, courses and leads.</p>
         <LoginForm next={next} />
       </div>
@@ -568,7 +568,7 @@ import { getCounts } from '@/lib/admin/counts';
 import AdminShell from '@/components/admin/AdminShell';
 
 export const metadata = {
-  title: 'Dashboard — SRM Education Admin',
+  title: 'Dashboard — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 
@@ -630,7 +630,7 @@ Run:
 node -e "
 const {MongoClient}=require('mongodb');
 (async()=>{const c=await new MongoClient('mongodb://127.0.0.1:27017').connect();
-const d=c.db('srmflexilearn');
+const d=c.db('upitcollege');
 console.log('colleges',await d.collection('universities').countDocuments());
 console.log('courses ',await d.collection('courses').countDocuments());
 console.log('pages   ',await d.collection('pages').countDocuments({family:{\$ne:'university'}}));

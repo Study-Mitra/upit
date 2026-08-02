@@ -6,7 +6,7 @@ import AdminShell from '@/components/admin/AdminShell';
 import { LOCKED_PAGE_FAMILY_SET } from '@/lib/admin/locked-pages';
 
 export const metadata = {
-  title: 'Pages — SRM Education Admin',
+  title: 'Pages — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 

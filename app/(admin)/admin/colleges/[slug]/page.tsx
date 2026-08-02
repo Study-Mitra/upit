@@ -8,7 +8,7 @@ import CollegeForm from '../CollegeForm';
 import { deleteCollege, duplicateCollege } from '../actions';
 
 export const metadata = {
-  title: 'Edit college — SRM Education Admin',
+  title: 'Edit college — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 

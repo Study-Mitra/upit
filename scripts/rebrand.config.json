@@ -1,0 +1,25 @@
+{
+  "_comment": "Rebrand values. Anything left as null is SKIPPED by scripts/rebrand.mjs rather than guessed at — a wrong phone number or address across every page is worse than an unchanged one.",
+
+  "brandName": { "from": "SRM Education", "to": "UPIT College of Education" },
+  "brandShort": { "from": "SRM", "to": "UPIT" },
+
+  "domain": { "from": "srmflexilearn.com", "to": null },
+  "domainSlug": { "from": "srmflexilearn", "to": null },
+
+  "phone": { "from": "9810504039", "to": null },
+  "email": { "from": "support@srmflexilearn.com", "to": null },
+
+  "address": {
+    "from": "D-70, 2nd FLOOR, MAIN PALAM DABRI ROAD, MAHAVIR ENCLAVE, NEW DELHI-110045",
+    "to": null,
+    "_note": "Also appears URL-encoded in the Footer's Google Maps link; the script re-encodes it."
+  },
+
+  "logo": { "from": "/new-assets/img/vidyacampus_logo.png", "to": null },
+
+  "social": {
+    "facebook": { "from": "https://www.facebook.com/profile.php?id=61590632371785", "to": null },
+    "instagram": { "from": "https://www.instagram.com/srmflexilearn", "to": null }
+  }
+}

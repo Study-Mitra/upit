@@ -4,7 +4,7 @@ import { getCounts } from '@/lib/admin/counts';
 import AdminShell from '@/components/admin/AdminShell';
 
 export const metadata = {
-  title: 'Dashboard — SRM Education Admin',
+  title: 'Dashboard — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 

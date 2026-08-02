@@ -6,7 +6,7 @@ import AdminShell from '@/components/admin/AdminShell';
 import CollegeForm from '../CollegeForm';
 
 export const metadata = {
-  title: 'Add college — SRM Education Admin',
+  title: 'Add college — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 

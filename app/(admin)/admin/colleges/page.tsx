@@ -5,7 +5,7 @@ import { getUniversities } from '@/lib/models/universities';
 import AdminShell from '@/components/admin/AdminShell';
 
 export const metadata = {
-  title: 'Colleges — SRM Education Admin',
+  title: 'Colleges — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 

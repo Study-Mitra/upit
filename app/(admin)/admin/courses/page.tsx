@@ -5,7 +5,7 @@ import { getCourses } from '@/lib/models/courses';
 import AdminShell from '@/components/admin/AdminShell';
 
 export const metadata = {
-  title: 'Courses — SRM Education Admin',
+  title: 'Courses — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 

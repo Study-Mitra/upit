@@ -6,7 +6,7 @@ import AdminShell from '@/components/admin/AdminShell';
 import PageForm from '../PageForm';
 
 export const metadata = {
-  title: 'Edit page — SRM Education Admin',
+  title: 'Edit page — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 

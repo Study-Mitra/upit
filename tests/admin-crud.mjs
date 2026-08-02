@@ -121,7 +121,11 @@ try {
   // ---- leads ----
   await page.goto(`${BASE}/admin/leads`, { waitUntil: 'networkidle' });
   const leadRows = await page.locator('.a-table tbody tr').count();
-  check('leads list renders', leadRows === 5, `${leadRows} rows`);
+  // Compared against the database, not a fixed number: real enquiries arrive
+  // through /lead-submit at any time, so a hardcoded count fails for a reason
+  // that has nothing to do with the admin.
+  const leadCount = await db.collection('leads').countDocuments();
+  check('leads list shows every lead', leadRows === leadCount, `${leadRows} rows vs ${leadCount} in DB`);
   const csv = await page.evaluate(() =>
     fetch('/admin/leads/export').then((r) => ({ status: r.status, type: r.headers.get('content-type') }))
   );

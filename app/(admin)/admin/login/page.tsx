@@ -3,7 +3,7 @@ import { getSession } from '@/lib/admin/auth';
 import LoginForm from './LoginForm';
 
 export const metadata = {
-  title: 'Sign in — SRM Education Admin',
+  title: 'Sign in — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 
@@ -24,7 +24,7 @@ export default async function LoginPage({
   return (
     <div className="a-login">
       <div className="a-card">
-        <h1>SRM Education</h1>
+        <h1>UPIT College of Education</h1>
         <p className="sub">Sign in to manage colleges, courses and leads.</p>
         <LoginForm next={next} />
       </div>

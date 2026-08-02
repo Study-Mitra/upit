@@ -10,7 +10,7 @@ import './admin.css';
  * fight a normal application UI. Everything here is ordinary modern Next.js.
  */
 export const metadata = {
-  title: 'SRM Education — Admin',
+  title: 'UPIT College of Education — Admin',
   robots: { index: false, follow: false },
 };
 

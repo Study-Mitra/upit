@@ -7,7 +7,7 @@ import CourseForm from '../CourseForm';
 import { deleteCourse, duplicateCourse } from '../actions';
 
 export const metadata = {
-  title: 'Edit course — SRM Education Admin',
+  title: 'Edit course — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 

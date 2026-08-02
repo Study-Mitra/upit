@@ -46,7 +46,7 @@ export default function AdminShell({
     <div className="a-shell">
       <nav className="a-sidebar">
         <div className="a-brand">
-          SRM <span>Admin</span>
+          UPIT <span>Admin</span>
         </div>
 
         <a className={`a-nav-link${current === 'dashboard' ? ' active' : ''}`} href="/admin">

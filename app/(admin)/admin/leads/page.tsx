@@ -6,7 +6,7 @@ import AdminShell from '@/components/admin/AdminShell';
 import { saveLead, removeLead } from './actions';
 
 export const metadata = {
-  title: 'Leads — SRM Education Admin',
+  title: 'Leads — UPIT College of Education Admin',
   robots: { index: false, follow: false },
 };
 

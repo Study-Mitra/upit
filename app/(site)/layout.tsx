@@ -39,8 +39,8 @@ const JSONLD_ORGANIZATION = {
   '@context': 'https://schema.org',
   '@type': 'EducationalOrganization',
   name: 'UPIT College of Education',
-  url: 'https://srmflexilearn.com',
-  logo: 'https://srmflexilearn.com/new-assets/img/upit_logo.png',
+  url: 'https://upitcollege.com',
+  logo: 'https://upitcollege.com/new-assets/img/upit_logo.png',
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+91 9818031375',
@@ -55,28 +55,18 @@ const JSONLD_ORGANIZATION = {
     postalCode: '110096',
     addressCountry: 'IN',
   },
-  sameAs: [
-    'https://www.facebook.com/profile.php?id=61590632371785',
-    '',
-    'https://www.instagram.com/srmflexilearn',
-    '',
-    '',
-  ],
+  sameAs: ['https://www.facebook.com/profile.php?id=61590632371785'],
 };
 
-/**
- * The SearchAction target keeps the live site's `?query=` during visual
- * verification. Phase 6 corrects it to `search_val`, which is the parameter the
- * site's own JavaScript actually sends.
- */
+
 const JSONLD_WEBSITE = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'UPIT College of Education',
-  url: 'https://srmflexilearn.com',
+  url: 'https://upitcollege.com',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://srmflexilearn.com/getSearchResults?query={search_term_string}',
+    target: 'https://upitcollege.com/getSearchResults?query={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 };

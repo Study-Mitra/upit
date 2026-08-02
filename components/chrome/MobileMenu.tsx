@@ -399,12 +399,9 @@ export default function MobileMenu() {
                 </a>
               </li>
     {" "}
-              <li>
-                <a href="https://www.instagram.com/srmflexilearn">
-                  <i className="feather-instagram"></i>
-                </a>
-              </li>
-    {" "}
+    {/* Instagram link removed with the rebrand — it pointed at the previous
+        company's profile. The neighbouring twitter/linkedin icons were already
+        placeholders (href="#") in the import. Restore once the handle is known. */}
               <li>
                 <a href="#">
                   <i className="feather-linkedin"></i>

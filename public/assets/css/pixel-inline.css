@@ -1,0 +1,19 @@
+/* GENERATED — do not hand-edit. Regenerate via the gen-* scripts.
+ *
+ * Every rule here replaces an inline style="... !important" block from the live
+ * markup. React cannot express !important in its style prop, so the declarations
+ * are preserved verbatim as CSS instead.
+ *
+ * The [data-pxs] selector is repeated to reach specificity (0,4,0), beating the
+ * most specific competing !important rule in styles.css
+ * (.active-dark-mode .rbt-badge.variation-02, at (0,3,0)).
+ *
+ * This file MUST load after styles.css.
+ */
+
+[data-pxs="x2865d793"][data-pxs][data-pxs][data-pxs] { border: 0.5px solid #c9a227 !important; }
+[data-pxs="x5c829654"][data-pxs][data-pxs][data-pxs] { background-color: #f59e0b !important; color: #fff !important; font-weight: 700; border-radius: 4px; padding: 2px 6px; }
+[data-pxs="xa55e665b"][data-pxs][data-pxs][data-pxs] { background-color: #3b82f6 !important; color: #fff !important; font-weight: 700; border-radius: 4px; padding: 2px 6px; }
+[data-pxs="xb2d0a419"][data-pxs][data-pxs][data-pxs] { background-color: #6b7280 !important; color: #fff !important; font-weight: 700; border-radius: 4px; padding: 2px 6px; }
+[data-pxs="xb313debe"][data-pxs][data-pxs][data-pxs] { background-color: #8b5cf6 !important; color: #fff !important; font-weight: 700; border-radius: 4px; padding: 2px 6px; }
+[data-pxs="xeea9153a"][data-pxs][data-pxs][data-pxs] { background-color: #10b981 !important; color: #fff !important; font-weight: 700; border-radius: 4px; padding: 2px 6px; }

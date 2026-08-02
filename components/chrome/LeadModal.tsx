@@ -14,47 +14,47 @@ export default function LeadModal() {
     {" "}
             <div className="col-lg-6 d-none d-md-block">
     {" "}
-              <div className="srm-left-panel  h-100 p-4 d-flex flex-column gap-3">
+              <div className="upit-left-panel  h-100 p-4 d-flex flex-column gap-3">
     {" "}
-                <div className="srm-title">
+                <div className="upit-title">
     {" Study Smarter: India's Leading Online "}
                   <span>Universities</span>
     {", Just One Click Away. "}
                 </div>
     {" "}
-                <div className="srm-uni-grid">
+                <div className="upit-uni-grid">
     {" "}
-                  <div className="srm-uni-box">
+                  <div className="upit-uni-box">
     {" "}
                     <img src="/new-assets/img/university/lpu-university_logo.svg" alt="LPU University" />
     {" "}
                   </div>
     {" "}
-                  <div className="srm-uni-box">
+                  <div className="upit-uni-box">
     {" "}
                     <img src="/new-assets/img/university/amity-university_logo.webp" alt="Amity University" />
     {" "}
                   </div>
     {" "}
-                  <div className="srm-uni-box">
+                  <div className="upit-uni-box">
     {" "}
                     <img src="/new-assets/img/university/vivekananda-global-university_logo.png" alt="Vivekananda Global University" />
     {" "}
                   </div>
     {" "}
-                  <div className="srm-uni-box">
+                  <div className="upit-uni-box">
     {" "}
                     <img src="/new-assets/img/university/parul-online_logo.webp" alt="Parul Online" />
     {" "}
                   </div>
     {" "}
-                  <div className="srm-uni-box">
+                  <div className="upit-uni-box">
     {" "}
                     <img src="/new-assets/img/university/jain-online-university_logo.webp" alt="Jain Online University" />
     {" "}
                   </div>
     {" "}
-                  <div className="srm-uni-box">
+                  <div className="upit-uni-box">
     {" "}
                     <img src="/new-assets/img/university/chandigarh-university-online_logo.webp" alt="Chandigarh University Online" />
     {" "}
@@ -62,7 +62,7 @@ export default function LeadModal() {
     {" "}
                 </div>
     {" "}
-                <ul className="srm-features">
+                <ul className="upit-features">
     {" "}
                   <li>Top Online Universities, All in One Place</li>
     {" "}
@@ -80,7 +80,7 @@ export default function LeadModal() {
     {" "}
                 </ul>
     {" "}
-                <a href="/compare-university" className="srm-cta-btn">
+                <a href="/compare-university" className="upit-cta-btn">
     {" Compare Universities "}
                   <i className="feather-arrow-right ms-1"></i>
     {" "}
@@ -94,7 +94,7 @@ export default function LeadModal() {
     {" "}
               <div className=" d-flex flex-column justify-content-center h-100 bg-white right-panel-form-anim" style={{ padding: "22px" }}>
     {" "}
-                <style dangerouslySetInnerHTML={{ __html: "\n    .form-wrap {\n        background: var(--color-background-primary);\n        border-radius: 12px;\n        border: 0.5px solid var(--color-border-tertiary);\n        max-width: 520px;\n        margin: 0 auto;\n    }\n\n    .form-header {\n        text-align: center;\n        margin-bottom: 1.5rem;\n    }\n\n    .form-header .icon-circle {\n        width: 52px;\n        height: 52px;\n        border-radius: 50%;\n        background: #E6F1FB;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        margin: 0 auto 0.75rem;\n    }\n\n    .form-header h2 {\n        font-size: 20px;\n        font-weight: 600;\n        margin: 0 0 4px;\n    }\n\n    .form-header p {\n        font-size: 13px;\n        color: #888;\n        margin: 0;\n    }\n\n    .f-label {\n        display: block;\n        font-size: 11px;\n        font-weight: 600;\n        color: #888;\n        margin-bottom: 5px;\n        letter-spacing: 0.4px;\n        text-transform: uppercase;\n    }\n\n    .input-wrap {\n        position: relative;\n    }\n\n    .input-wrap i {\n        position: absolute;\n        left: 12px;\n        top: 50%;\n        transform: translateY(-50%);\n        font-size: 16px;\n        color: #aaa;\n        pointer-events: none;\n    }\n\n    .f-input {\n        width: 100%;\n        padding: 8px 12px 8px 38px !important;\n        font-size: 14px !important;\n        border: 1px solid #e0e0e0 !important;\n        border-radius: 8px !important;\n        background: #f9f9f9 !important;\n        box-sizing: border-box;\n        outline: none;\n        transition: border-color 0.15s;\n    }\n\n    .f-input:focus {\n        border-color: #185FA5 !important;\n        box-shadow: 0 0 0 3px rgba(55, 138, 221, 0.12) !important;\n        background: #fff !important;\n    }\n\n    .row-2 {\n        display: grid;\n        grid-template-columns: 1fr 1fr;\n        gap: 12px;\n    }\n\n    .f-field {\n        margin-bottom: 14px;\n    }\n\n  \n.icon-circle {\n    width: 72px;\n    height: 72px;\n    border-radius: 50%;\n    background: #fff;\n    border: 2px solid #c9a227;\n    box-shadow: 0 0 0 6px rgba(201,162,39,0.12);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin: 0 auto 0.75rem;\n    overflow: hidden;\n    padding: 6px;\n}\n\n.srm-modal-logo {\n    width: 30%;\n    height: 100%;\n    object-fit: contain;\n}\n    .apply-submit-btn:hover {\n        background: #0C447C;\n    }\n" }} />
+                <style dangerouslySetInnerHTML={{ __html: "\n    .form-wrap {\n        background: var(--color-background-primary);\n        border-radius: 12px;\n        border: 0.5px solid var(--color-border-tertiary);\n        max-width: 520px;\n        margin: 0 auto;\n    }\n\n    .form-header {\n        text-align: center;\n        margin-bottom: 1.5rem;\n    }\n\n    .form-header .icon-circle {\n        width: 52px;\n        height: 52px;\n        border-radius: 50%;\n        background: #E6F1FB;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        margin: 0 auto 0.75rem;\n    }\n\n    .form-header h2 {\n        font-size: 20px;\n        font-weight: 600;\n        margin: 0 0 4px;\n    }\n\n    .form-header p {\n        font-size: 13px;\n        color: #888;\n        margin: 0;\n    }\n\n    .f-label {\n        display: block;\n        font-size: 11px;\n        font-weight: 600;\n        color: #888;\n        margin-bottom: 5px;\n        letter-spacing: 0.4px;\n        text-transform: uppercase;\n    }\n\n    .input-wrap {\n        position: relative;\n    }\n\n    .input-wrap i {\n        position: absolute;\n        left: 12px;\n        top: 50%;\n        transform: translateY(-50%);\n        font-size: 16px;\n        color: #aaa;\n        pointer-events: none;\n    }\n\n    .f-input {\n        width: 100%;\n        padding: 8px 12px 8px 38px !important;\n        font-size: 14px !important;\n        border: 1px solid #e0e0e0 !important;\n        border-radius: 8px !important;\n        background: #f9f9f9 !important;\n        box-sizing: border-box;\n        outline: none;\n        transition: border-color 0.15s;\n    }\n\n    .f-input:focus {\n        border-color: #185FA5 !important;\n        box-shadow: 0 0 0 3px rgba(55, 138, 221, 0.12) !important;\n        background: #fff !important;\n    }\n\n    .row-2 {\n        display: grid;\n        grid-template-columns: 1fr 1fr;\n        gap: 12px;\n    }\n\n    .f-field {\n        margin-bottom: 14px;\n    }\n\n  \n.icon-circle {\n    width: 72px;\n    height: 72px;\n    border-radius: 50%;\n    background: #fff;\n    border: 2px solid #c9a227;\n    box-shadow: 0 0 0 6px rgba(201,162,39,0.12);\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    margin: 0 auto 0.75rem;\n    overflow: hidden;\n    padding: 6px;\n}\n\n.upit-modal-logo {\n    width: 30%;\n    height: 100%;\n    object-fit: contain;\n}\n    .apply-submit-btn:hover {\n        background: #0C447C;\n    }\n" }} />
     {" "}
                 <form encType="multipart/form-data" className="rainbow-dynamic-form max-width-auto leadForm">
     {" "}
@@ -108,7 +108,7 @@ export default function LeadModal() {
     {" "}
                       <div className="">
     {" "}
-                        <img src="/new-assets/img/upit_logo.png" alt="UPIT Logo" className="srm-modal-logo" />
+                        <img src="/new-assets/img/upit_logo.png" alt="UPIT Logo" className="upit-modal-logo" />
     {" "}
                       </div>
     {" "}

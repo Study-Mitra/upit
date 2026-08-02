@@ -4,7 +4,7 @@
  */
 export default function WhatsAppFloat() {
   return (
-    <a href="https://wa.me/919818031375?text=Hello%21%20I%20am%20interested%20in%20online%20and%20distance%20degree%20courses." className="srm-whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <a href="https://wa.me/919818031375?text=Hello%21%20I%20am%20interested%20in%20online%20and%20distance%20degree%20courses." className="upit-whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
     {" "}
       <i className="fab fa-whatsapp"></i>
     {" "}

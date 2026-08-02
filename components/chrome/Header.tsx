@@ -78,14 +78,8 @@ export default function Header() {
     {" "}
                       </li>
     {" "}
-                      <li>
-    {" "}
-                        <a href="https://www.instagram.com/srmflexilearn" target="_blank">
-                          <i className="fab fa-instagram"></i>
-                        </a>
-    {" "}
-                      </li>
-    {" "}
+    {/* Instagram link removed with the rebrand — it pointed at the previous
+        company's profile. Restore once the new handle is known. */}
                     </ul>
     {" "}
                   </div>

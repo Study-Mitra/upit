@@ -9,8 +9,8 @@
   --a-border: #e3e6ea;
   --a-text: #1c2430;
   --a-muted: #667085;
-  --a-primary: #ff7d00;
-  --a-secondary: #045889;
+  --a-primary: #c89200;
+  --a-secondary: #0b2350;
   --a-danger: #d92d20;
   --a-success: #12805c;
   --a-radius: 8px;
@@ -202,8 +202,8 @@ a:hover {
   color: #fff;
 }
 .a-btn-primary:hover {
-  background: #e97200;
-  border-color: #e97200;
+  background: #a87b00;
+  border-color: #a87b00;
   color: #fff;
 }
 .a-btn-danger {
@@ -247,7 +247,7 @@ a:hover {
 .a-input:focus,
 .a-textarea:focus,
 .a-select:focus {
-  outline: 2px solid rgba(255, 125, 0, 0.35);
+  outline: 2px solid rgba(200, 146, 0, 0.35);
   border-color: var(--a-primary);
 }
 .a-textarea {

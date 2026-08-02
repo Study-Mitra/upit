@@ -41,13 +41,9 @@ export default function Footer() {
                     </a>
                   </li>
     {" "}
-                  <li>
-                    <a href="https://www.instagram.com/srmflexilearn" target="_blank">
-    {" "}
-                      <i className="feather-instagram"></i>
-                    </a>
-                  </li>
-    {" "}
+    {/* Instagram link removed with the rebrand: it pointed at the previous
+        company's profile, so leaving it would have sent visitors to the old
+        brand. Restore this <li> once the new handle is known. */}
                 </ul>
     {" "}
                 <div className="contact-btn mt--30">

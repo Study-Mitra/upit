@@ -73,3 +73,4 @@ which `PUBLIC_PATHS` already exempts, so no `/admin/api/login` endpoint exists.
 Built: login, session, sidebar shell, dashboard counts.
 Not yet built (the sidebar links 404): colleges, courses, pages, leads. See
 `docs/superpowers/specs/` and `docs/superpowers/plans/`.
+# upit

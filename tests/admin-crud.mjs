@@ -1,20 +1,10 @@
-/**
- * Admin CRUD round trip: create a college, see it on the public site, duplicate
- * it, then delete both. Also exercises the leads screens and the CSV export.
- *
- *   node tests/admin-crud.mjs http://localhost:3001
- *
- * Signs in with a throwaway admin account and removes it afterwards, so the real
- * account's password is never needed or changed. Every college it creates is
- * deleted again, including on failure.
- */
+
 import { chromium } from '@playwright/test';
 import { MongoClient } from 'mongodb';
 import bcrypt from 'bcryptjs';
+import { MONGODB_URI as URI, MONGODB_DB as DB } from '../lib/env.mjs';
 
 const BASE = process.argv[2] ?? process.env.LOCAL_ORIGIN ?? 'http://localhost:3000';
-const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const DB = process.env.MONGODB_DB ?? 'upitcollege';
 const EMAIL = 'test-only@example.invalid';
 const PASSWORD = 'correct-horse-battery-staple';
 const SLUG = 'zz-test-college';

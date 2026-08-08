@@ -5,2532 +5,2530 @@
 export default function Header() {
   return (
     <header className="rbt-header rbt-header-10">
-    {" "}
+      {" "}
       <div className="rbt-sticky-placeholder"></div>
-    {" "}
+      {" "}
       <div className="rbt-header-top rbt-header-top-1 header-space-betwween bg-not-transparent bg-color-darker top-expended-activation">
-    {" "}
+        {" "}
         <div className="container-fluid">
-    {" "}
+          {" "}
           <div className="top-expended-wrapper">
-    {" "}
+            {" "}
             <div className="top-expended-inner rbt-header-sec align-items-center">
-    {" "}
+              {" "}
               <div className="rbt-header-sec-col rbt-header-left">
-    {" "}
+                {" "}
                 <div className="rbt-header-content">
-    {" "}
+                  {" "}
                   <div className="header-info">
-    {" "}
+                    {" "}
                     <ul className="rbt-information-list">
-    {" "}
+                      {" "}
                       <li>
-    {" "}
+                        {" "}
                         <a href="tel:+91 9818031375">
-    {" "}
+                          {" "}
                           <i className="feather-phone"></i>
-    {" +91 9818031375 "}
+                          {" +91 9818031375 "}
                         </a>
-    {" "}
+                        {" "}
                       </li>
-    {" "}
+                      {" "}
                       <li>
-    {" "}
+                        {" "}
                         <a href="mailto:support@upitcollege.com">
-    {" "}
+                          {" "}
                           <i className="feather-mail"></i>
-    {" support@upitcollege.com "}
+                          {" support@upitcollege.com "}
                         </a>
-    {" "}
+                        {" "}
                       </li>
-    {" "}
+                      {" "}
                       <li>
-    {" "}
+                        {" "}
                         <a href="#">
-    {" "}
+                          {" "}
                           <i className="feather-map-pin"></i>
-    {" A 1278, Mayur Vihar, Phase-III, Delhi-110096. "}
+                          {" A 1278, Mayur Vihar, Phase-III, Delhi-110096. "}
                         </a>
-    {" "}
+                        {" "}
                       </li>
-    {" "}
+                      {" "}
                     </ul>
-    {" "}
+                    {" "}
                   </div>
-    {" "}
+                  {" "}
                 </div>
-    {" "}
+                {" "}
               </div>
-    {" "}
+              {" "}
               <div className="rbt-header-sec-col rbt-header-right mt_md--10 mt_sm--10">
-    {" "}
+                {" "}
                 <div className="rbt-header-content justify-content-start justify-content-lg-end">
-    {" "}
+                  {" "}
                   <div className="header-info">
-    {" "}
+                    {" "}
                     <ul className="social-share-transparent">
-    {" "}
+                      {" "}
                       <li>
-    {" "}
+                        {" "}
                         <a href="https://www.facebook.com/profile.php?id=61590632371785" target="_blank">
                           <i className="fab fa-facebook-f"></i>
                         </a>
-    {" "}
+                        {" "}
                       </li>
-    {" "}
-    {/* Instagram link removed with the rebrand — it pointed at the previous
-        company's profile. Restore once the new handle is known. */}
+                      {" "}
                     </ul>
-    {" "}
+                    {" "}
                   </div>
-    {" "}
+                  {" "}
                 </div>
-    {" "}
+                {" "}
               </div>
-    {" "}
+              {" "}
             </div>
-    {" "}
+            {" "}
             <div className="header-info">
-    {" "}
+              {" "}
               <div className="top-bar-expended d-block d-lg-none">
-    {" "}
+                {" "}
                 <button className="topbar-expend-button rbt-round-btn">
                   <i className="feather-plus"></i>
                 </button>
-    {" "}
+                {" "}
               </div>
-    {" "}
+              {" "}
             </div>
-    {" "}
+            {" "}
           </div>
-    {" "}
+          {" "}
         </div>
-    {" "}
+        {" "}
       </div>
-    {" "}
+      {" "}
       <div className="rbt-header-wrapper header-space-betwween header-sticky">
-    {" "}
+        {" "}
         <div className="container-fluid">
-    {" "}
+          {" "}
           <div className="mainbar-row rbt-navigation-center align-items-center">
-    {" "}
+            {" "}
             <div className="header-left rbt-header-content">
-    {" "}
+              {" "}
               <div className="header-info">
-    {" "}
+                {" "}
                 <div className="logo logo-dark" style={{ padding: "8px 0", margin: "0" }}>
-    {" "}
+                  {" "}
                   <a href="/">
-    {" "}
+                    {" "}
                     <img src="/new-assets/img/upit_logo.png" alt="logo" width="220" className="img-fluid" style={{ height: "auto", maxHeight: "65px", width: "auto", objectFit: "contain", transform: "scale(1.1)", transformOrigin: "left center" }} />
-    {" "}
+                    {" "}
                   </a>
-    {" "}
+                  {" "}
                 </div>
-    {" "}
+                {" "}
                 <div className="logo d-none logo-light" style={{ padding: "8px 0", margin: "0" }}>
-    {" "}
+                  {" "}
                   <a href="/">
-    {" "}
+                    {" "}
                     <img src="/new-assets/img/upit_logo.png" alt="logo" width="220" className="img-fluid" style={{ height: "auto", maxHeight: "65px", width: "auto", objectFit: "contain", transform: "scale(1.1)", transformOrigin: "left center" }} />
-    {" "}
+                    {" "}
                   </a>
-    {" "}
+                  {" "}
                 </div>
-    {" "}
+                {" "}
               </div>
-    {" "}
+              {" "}
             </div>
-    {" "}
+            {" "}
             <div className="rbt-main-navigation d-none d-xl-block">
-    {" "}
+              {" "}
               <nav className="mainmenu-nav">
-    {" "}
+                {" "}
                 <ul className="mainmenu">
-    {" "}
+                  {" "}
                   <li className="with-megamenu has-menu-child-item position-static">
-    {" "}
+                    {" "}
                     <a href="/">Home</a>
-    {" "}
+                    {" "}
                   </li>
-    {" "}
+                  {" "}
                   <li className="with-megamenu has-menu-child-item position-static">
-    {" "}
+                    {" "}
                     <a href="/about">About</a>
-    {" "}
+                    {" "}
                   </li>
-    {" "}
+                  {" "}
                   <li className="with-megamenu has-menu-child-item position-static">
-    {" "}
+                    {" "}
                     <a href="/course">
-    {"Programs "}
+                      {"Programs "}
                       <i className="feather-chevron-down"></i>
                     </a>
-    {" "}
+                    {" "}
                     <div className="rbt-megamenu grid-item-2" style={{ overflowX: "hidden" }}>
-    {" "}
+                      {" "}
                       <div className="wrapper">
-    {" "}
+                        {" "}
                         <div className="row m-0 justify-content-center">
-    {" "}
+                          {" "}
                           <div className="col-lg-12 d-flex justify-content-center py-3" style={{ background: "#f5f8fa", borderBottom: "1px solid #eef2f6" }}>
-    {" "}
+                            {" "}
                             <ul className="rbt-portfolio-filter filter-tab-button justify-content-center nav nav-tabs" id="pills-mode-tab" role="tablist" style={{ border: "none", background: "transparent", padding: "0" }}>
-    {" "}
+                              {" "}
                               <li className="nav-item" role="presentation">
-    {" "}
+                                {" "}
                                 <button className="active" id="pills-online-tab" data-bs-toggle="pill" data-bs-target="#pills-online-content" type="button" role="tab" aria-controls="pills-online-content" aria-selected="true">
-    {" "}
+                                  {" "}
                                   <span className="filter-text">
                                     <i className="feather-globe me-2"></i>
-    {" Online Programs"}
+                                    {" Online Programs"}
                                   </span>
-    {" "}
+                                  {" "}
                                 </button>
-    {" "}
+                                {" "}
                               </li>
-    {" "}
+                              {" "}
                               <li className="nav-item" role="presentation">
-    {" "}
+                                {" "}
                                 <button id="pills-regular-tab" data-bs-toggle="pill" data-bs-target="#pills-regular-content" type="button" role="tab" aria-controls="pills-regular-content" aria-selected="false">
-    {" "}
+                                  {" "}
                                   <span className="filter-text">
                                     <i className="feather-home me-2"></i>
-    {" Regular Programs"}
+                                    {" Regular Programs"}
                                   </span>
-    {" "}
+                                  {" "}
                                 </button>
-    {" "}
+                                {" "}
                               </li>
-    {" "}
+                              {" "}
                             </ul>
-    {" "}
+                            {" "}
                           </div>
-    {" "}
+                          {" "}
                         </div>
-    {" "}
+                        {" "}
                         <div className="tab-content" id="pills-mode-tabContent">
-    {" "}
+                          {" "}
                           <div className="tab-pane fade show active" id="pills-online-content" role="tabpanel" aria-labelledby="pills-online-tab">
-    {" "}
+                            {" "}
                             <div className="row g-0 mega-explore-wrapper flex-nowrap">
-    {" "}
+                              {" "}
                               <div className="mega-cat-col mt-1">
-    {" "}
+                                {" "}
                                 <div className="mega-cat-heading">
-    {" "}
+                                  {" "}
                                   <i className="feather-grid"></i>
-    {" "}
+                                  {" "}
                                   <span>Categories</span>
-    {" "}
+                                  {" "}
                                 </div>
-    {" "}
+                                {" "}
                                 <div className="nav flex-column nav-pills mega-cat-pills" id="v-pills-tab-online" role="tablist" aria-orientation="vertical">
-    {" "}
+                                  {" "}
                                   <button className="nav-link mega-cat-tab  active " id="v-pills-ug-courses-online-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ug-courses-online" type="button" role="tab" aria-controls="v-pills-ug-courses-online" aria-selected="true">
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-icon">
-    {" "}
+                                      {" "}
                                       <i className="feather-book-open"></i>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-text">
-    {" "}
+                                      {" "}
                                       <span className="mega-cat-name">UG Courses</span>
-    {" "}
+                                      {" "}
                                       <small className="mega-cat-sub">(Under Graduate Programs)</small>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <i className="feather-chevron-right mega-cat-arrow"></i>
-    {" "}
+                                    {" "}
                                   </button>
-    {" "}
+                                  {" "}
                                   <button className="nav-link mega-cat-tab " id="v-pills-pg-courses-online-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pg-courses-online" type="button" role="tab" aria-controls="v-pills-pg-courses-online" aria-selected="false">
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-icon">
-    {" "}
+                                      {" "}
                                       <i className="feather-book-open"></i>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-text">
-    {" "}
+                                      {" "}
                                       <span className="mega-cat-name">PG Courses</span>
-    {" "}
+                                      {" "}
                                       <small className="mega-cat-sub">(Post Graduate Programs)</small>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <i className="feather-chevron-right mega-cat-arrow"></i>
-    {" "}
+                                    {" "}
                                   </button>
-    {" "}
+                                  {" "}
                                   <button className="nav-link mega-cat-tab " id="v-pills-phd-online-tab" data-bs-toggle="pill" data-bs-target="#v-pills-phd-online" type="button" role="tab" aria-controls="v-pills-phd-online" aria-selected="false">
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-icon">
-    {" "}
+                                      {" "}
                                       <i className="feather-book-open"></i>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-text">
-    {" "}
+                                      {" "}
                                       <span className="mega-cat-name">PHD</span>
-    {" "}
+                                      {" "}
                                       <small className="mega-cat-sub">(Doctor of Philosophy Programs)</small>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <i className="feather-chevron-right mega-cat-arrow"></i>
-    {" "}
+                                    {" "}
                                   </button>
-    {" "}
+                                  {" "}
                                 </div>
-    {" "}
+                                {" "}
                               </div>
-    {" "}
+                              {" "}
                               <div className="mega-courses-col">
-    {" "}
+                                {" "}
                                 <div className="tab-content" id="v-pills-tabContent-online">
-    {" "}
+                                  {" "}
                                   <div className="tab-pane fade  show active " id="v-pills-ug-courses-online" role="tabpanel" aria-labelledby="v-pills-ug-courses-online-tab">
-    {" "}
+                                    {" "}
                                     <div className="row g-3 m-0">
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-bcommba_banner.webp" alt="Online & Distance BCOM+MBA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance BCOM+MBA">Online & Distance BCOM+MBA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>1 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-distance-bcommba" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-distance-bcommba" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-bcamca_banner.webp" alt="Online & Distance BCA+MCA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance BCA+MCA">Online & Distance BCA+MCA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>1 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-distance-bcamca" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-distance-bcamca" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-bbamba_banner.webp" alt="Online & Distance BBA+MBA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance BBA+MBA">Online & Distance BBA+MBA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>1 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-distance-bbamba" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-distance-bbamba" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-ba-jmc_banner.webp" alt="Online & Distance BA JMC" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance BA JMC">Online & Distance BA JMC</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>5 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-bajmc" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-bajmc" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-bsc_banner.png" alt="Online & Distance BSC" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance BSC">Online & Distance BSC</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3 yrs.</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>5 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-bsc" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-bsc" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-bca_banner.webp" alt="Online & Distance BCA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance BCA">Online & Distance BCA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>6 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-bca" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-bca" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                     </div>
-    {" "}
+                                    {" "}
                                   </div>
-    {" "}
+                                  {" "}
                                   <div className="tab-pane fade " id="v-pills-pg-courses-online" role="tabpanel" aria-labelledby="v-pills-pg-courses-online-tab">
-    {" "}
+                                    {" "}
                                     <div className="row g-3 m-0">
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-mba_banner.webp" alt="Online & Distance MBA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance MBA">Online & Distance MBA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>1 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-distance-mba" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-distance-mba" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-ma-jmc_banner.webp" alt="Online & Distance MA JMC" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance MA JMC">Online & Distance MA JMC</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>5 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-majmc" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-majmc" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-msc_banner.png" alt="Online & Distance MSc" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance MSc">Online & Distance MSc</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>6 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-msc" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-msc" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-mca_banner.jpg" alt="Online & Distance MCA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance MCA">Online & Distance MCA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>6 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-mca" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-mca" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-mcom_banner.png" alt="Online & Distance M.Com" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance M.Com">Online & Distance M.Com</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>6 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-mcom" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-mcom" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/online-distance-ma_banner.webp" alt="Online & Distance MA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Online & Distance MA">Online & Distance MA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>6 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/online-ma" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/online-ma" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                     </div>
-    {" "}
+                                    {" "}
                                   </div>
-    {" "}
+                                  {" "}
                                   <div className="tab-pane fade " id="v-pills-phd-online" role="tabpanel" aria-labelledby="v-pills-phd-online-tab">
-    {" "}
+                                    {" "}
                                     <div className="row g-3 m-0">
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/phd-in-physical-education_banner.webp" alt="Ph.D in Physical Education" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Ph.D in Physical Education">Ph.D in Physical Education</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3-5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>1 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/phd-in-physical-education" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/phd-in-physical-education" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/phd-in-nursing_banner.webp" alt="Ph.D in Nursing" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Ph.D in Nursing">Ph.D in Nursing</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3-5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>1 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/phd-in-nursing" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/phd-in-nursing" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/phd-in-library-science_banner.webp" alt="Ph.D in Library Science" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Ph.D in Library Science">Ph.D in Library Science</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3-5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>1 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/phd-in-library-science" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/phd-in-library-science" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/phd-in-media-mass-communication_banner.webp" alt="Ph.D in Media & Mass Communication" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Ph.D in Media & Mass Communication">Ph.D in Media & Mass Communication</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3-5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/phd-in-media-mass-communication" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/phd-in-media-mass-communication" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/phd-in-humanities-social-sciences_banner.webp" alt="Ph.D in Humanities & Social Sciences" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Ph.D in Humanities & Social Sciences">Ph.D in Humanities & Social Sciences</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3-5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/phd-in-humanities-social-sciences" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/phd-in-humanities-social-sciences" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/phd-in-management-studies_banner.webp" alt="Ph.D in Management Studies" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Ph.D in Management Studies">Ph.D in Management Studies</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3-5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/phd-in-management-studies" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/phd-in-management-studies" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                     </div>
-    {" "}
+                                    {" "}
                                   </div>
-    {" "}
+                                  {" "}
                                 </div>
-    {" "}
+                                {" "}
                               </div>
-    {" "}
+                              {" "}
                             </div>
-    {" "}
+                            {" "}
                           </div>
-    {" "}
+                          {" "}
                           <div className="tab-pane fade" id="pills-regular-content" role="tabpanel" aria-labelledby="pills-regular-tab">
-    {" "}
+                            {" "}
                             <div className="row g-0 mega-explore-wrapper flex-nowrap">
-    {" "}
+                              {" "}
                               <div className="mega-cat-col">
-    {" "}
+                                {" "}
                                 <div className="mega-cat-heading">
-    {" "}
+                                  {" "}
                                   <i className="feather-grid"></i>
-    {" "}
+                                  {" "}
                                   <span>Categories</span>
-    {" "}
+                                  {" "}
                                 </div>
-    {" "}
+                                {" "}
                                 <div className="nav flex-column nav-pills mega-cat-pills" id="v-pills-tab-regular" role="tablist" aria-orientation="vertical">
-    {" "}
+                                  {" "}
                                   <button className="nav-link mega-cat-tab  active " id="v-pills-ug-courses-regular-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ug-courses-regular" type="button" role="tab" aria-controls="v-pills-ug-courses-regular" aria-selected="true">
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-icon">
-    {" "}
+                                      {" "}
                                       <i className="feather-book-open"></i>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-text">
-    {" "}
+                                      {" "}
                                       <span className="mega-cat-name">UG Courses</span>
-    {" "}
+                                      {" "}
                                       <small className="mega-cat-sub">(Under Graduate Programs)</small>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <i className="feather-chevron-right mega-cat-arrow"></i>
-    {" "}
+                                    {" "}
                                   </button>
-    {" "}
+                                  {" "}
                                   <button className="nav-link mega-cat-tab " id="v-pills-pg-courses-regular-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pg-courses-regular" type="button" role="tab" aria-controls="v-pills-pg-courses-regular" aria-selected="false">
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-icon">
-    {" "}
+                                      {" "}
                                       <i className="feather-book-open"></i>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <span className="mega-cat-tab-text">
-    {" "}
+                                      {" "}
                                       <span className="mega-cat-name">PG Courses</span>
-    {" "}
+                                      {" "}
                                       <small className="mega-cat-sub">(Post Graduate Programs)</small>
-    {" "}
+                                      {" "}
                                     </span>
-    {" "}
+                                    {" "}
                                     <i className="feather-chevron-right mega-cat-arrow"></i>
-    {" "}
+                                    {" "}
                                   </button>
-    {" "}
+                                  {" "}
                                 </div>
-    {" "}
+                                {" "}
                               </div>
-    {" "}
+                              {" "}
                               <div className="mega-courses-col">
-    {" "}
+                                {" "}
                                 <div className="tab-content" id="v-pills-tabContent-regular">
-    {" "}
+                                  {" "}
                                   <div className="tab-pane fade  show active " id="v-pills-ug-courses-regular" role="tabpanel" aria-labelledby="v-pills-ug-courses-regular-tab">
-    {" "}
+                                    {" "}
                                     <div className="row g-3 m-0">
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/diploma-polytechnic_banner.png" alt="Diploma Polytechnic" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Diploma Polytechnic">Diploma Polytechnic</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/diploma-polytechnic-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/diploma-polytechnic-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/diploma-engineering_banner.webp" alt="Diploma Engineering" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Diploma Engineering">Diploma Engineering</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/diploma-engineering-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/diploma-engineering-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/bca_banner.webp" alt="BCA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="BCA">BCA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/bca-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/bca-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/llb_banner.webp" alt="LLB" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="LLB">LLB</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>3 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/llb-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/llb-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/ballb_banner.webp" alt="BALLB" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="BALLB">BALLB</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>5 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/ballb-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/ballb-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/dpharm_banner.webp" alt="D.Pharm" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="D.Pharm">D.Pharm</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/dpharm-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/dpharm-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                     </div>
-    {" "}
+                                    {" "}
                                   </div>
-    {" "}
+                                  {" "}
                                   <div className="tab-pane fade " id="v-pills-pg-courses-regular" role="tabpanel" aria-labelledby="v-pills-pg-courses-regular-tab">
-    {" "}
+                                    {" "}
                                     <div className="row g-3 m-0">
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/llm_banner.webp" alt="LLM" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="LLM">LLM</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/llm-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/llm-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/mtech_banner.webp" alt="M.Tech" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="M.Tech">M.Tech</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/mtech-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/mtech-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/mpharm_banner.webp" alt="M.Pharm" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="M.Pharm">M.Pharm</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/mpharm-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/mpharm-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/mca_banner.webp" alt="MCA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="MCA">MCA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/mca-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/mca-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/mcom_banner.webp" alt="Mcom" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="Mcom">Mcom</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/mcom-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/mcom-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                       <div className="col-12 col-sm-6 col-lg-4">
-    {" "}
+                                        {" "}
                                         <div className="mega-course-card">
-    {" "}
+                                          {" "}
                                           <div className="mega-course-top">
-    {" "}
+                                            {" "}
                                             <div className="mega-course-thumb">
-    {" "}
+                                              {" "}
                                               <img src="/new-assets/img/courses/mba_banner.png" alt="MBA" />
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                             <div className="mega-course-title-wrap">
-    {" "}
+                                              {" "}
                                               <h6 className="mega-course-title" title="MBA">MBA</h6>
-    {" "}
+                                              {" "}
                                               <span className="mega-course-tag">
-    {" "}
+                                                {" "}
                                                 <i className="feather-award"></i>
-    {" Accredited "}
+                                                {" Accredited "}
                                               </span>
-    {" "}
+                                              {" "}
                                             </div>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                           <ul className="mega-course-meta">
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-clock"></i>
-    {" "}
+                                              {" "}
                                               <span>2 Years</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                             <li>
-    {" "}
+                                              {" "}
                                               <i className="feather-home"></i>
-    {" "}
+                                              {" "}
                                               <span>0 Universities</span>
-    {" "}
+                                              {" "}
                                             </li>
-    {" "}
+                                            {" "}
                                           </ul>
-    {" "}
+                                          {" "}
                                           <div className="mega-course-actions">
-    {" "}
+                                            {" "}
                                             <a href="/specialization/mba-regular" className="mega-btn mega-btn-primary">
-    {" "}
+                                              {" "}
                                               <i className="feather-layers"></i>
-    {" Specializations "}
+                                              {" Specializations "}
                                             </a>
-    {" "}
+                                            {" "}
                                             <a href="/course/mba-regular" className="mega-btn mega-btn-ghost">
-    {" Read More "}
+                                              {" Read More "}
                                               <i className="feather-arrow-right"></i>
-    {" "}
+                                              {" "}
                                             </a>
-    {" "}
+                                            {" "}
                                           </div>
-    {" "}
+                                          {" "}
                                         </div>
-    {" "}
+                                        {" "}
                                       </div>
-    {" "}
+                                      {" "}
                                     </div>
-    {" "}
+                                    {" "}
                                   </div>
-    {" "}
+                                  {" "}
                                 </div>
-    {" "}
+                                {" "}
                               </div>
-    {" "}
+                              {" "}
                             </div>
-    {" "}
+                            {" "}
                           </div>
-    {" "}
+                          {" "}
                         </div>
-    {" "}
+                        {" "}
                       </div>
-    {" "}
+                      {" "}
                     </div>
-    {" "}
+                    {" "}
                   </li>
-    {" "}
+                  {" "}
                   <li className="with-megamenu has-menu-child-item position-static">
-    {" "}
+                    {" "}
                     <a href="/university">Top Universities</a>
-    {" "}
+                    {" "}
                   </li>
-    {" "}
+                  {" "}
                   <li className="with-megamenu has-menu-child-item position-static">
-    {" "}
+                    {" "}
                     <a href="/gallery">Gallery</a>
-    {" "}
+                    {" "}
                   </li>
-    {" "}
+                  {" "}
                   <li className="with-megamenu has-menu-child-item position-static">
-    {" "}
+                    {" "}
                     <a href="/blog">Blog</a>
-    {" "}
+                    {" "}
                   </li>
-    {" "}
+                  {" "}
                   <li className="with-megamenu has-menu-child-item position-static">
-    {" "}
+                    {" "}
                     <a href="/contact">Contact Us</a>
-    {" "}
+                    {" "}
                   </li>
-    {" "}
+                  {" "}
                 </ul>
-    {" "}
+                {" "}
               </nav>
-    {" "}
+              {" "}
             </div>
-    {" "}
+            {" "}
             <div className="header-right">
-    {" "}
+              {" "}
               <ul className="quick-access">
-    {" "}
+                {" "}
                 <li className="access-icon">
-    {" "}
+                  {" "}
                   <a className="search-trigger-active rbt-round-btn" href="#">
-    {" "}
+                    {" "}
                     <i className="feather-search"></i>
-    {" "}
+                    {" "}
                   </a>
-    {" "}
+                  {" "}
                 </li>
-    {" "}
+                {" "}
               </ul>
-    {" "}
+              {" "}
               <div className="rbt-btn-wrapper d-none d-xl-block">
-    {" "}
+                {" "}
                 <a className="rbt-btn btn-border-gradient radius-round btn-sm" href="#" data-bs-toggle="modal" data-bs-target="#pop">
-    {" "}
+                  {" "}
                   <span data-text="Apply Now">{" Apply Now"}</span>
-    {" "}
+                  {" "}
                   <span className="btn-icon">
                     <i className="feather-arrow-right"></i>
                   </span>
-    {" "}
+                  {" "}
                 </a>
-    {" "}
+                {" "}
               </div>
-    {" "}
+              {" "}
               <div className="mobile-menu-bar d-block d-xl-none">
-    {" "}
+                {" "}
                 <div className="hamberger">
-    {" "}
+                  {" "}
                   <button className="hamberger-button rbt-round-btn">
-    {" "}
+                    {" "}
                     <i className="feather-menu"></i>
-    {" "}
+                    {" "}
                   </button>
-    {" "}
+                  {" "}
                 </div>
-    {" "}
+                {" "}
               </div>
-    {" "}
+              {" "}
             </div>
-    {" "}
+            {" "}
           </div>
-    {" "}
+          {" "}
         </div>
-    {" "}
-    {/* Start Search Dropdown  */}
-    {" "}
+        {" "}
+        {/* Start Search Dropdown  */}
+        {" "}
         <div className="rbt-search-dropdown">
-    {" "}
+          {" "}
           <div className="wrapper">
-    {" "}
+            {" "}
             <div className="row">
-    {" "}
+              {" "}
               <div className="col-lg-12">
-    {" "}
+                {" "}
                 <form action="#">
-    {" "}
+                  {" "}
                   <div className="d-flex align-items-center">
-    {" "}
+                    {" "}
                     <input type="text" id="bannerSearch" className="w-100" placeholder="What are you looking for?" required={true} />
-    {" "}
+                    {" "}
                     <div className="submit-btn ms-3">
-    {" "}
+                      {" "}
                       <a className="rbt-btn btn-gradient btn-md" type="submit" href="#">Search</a>
-    {" "}
+                      {" "}
                     </div>
-    {" "}
+                    {" "}
                   </div>
-    {" "}
+                  {" "}
                   <div className="position-relative mt-2 w-100">
-    {" "}
+                    {" "}
                     <div className="rounded-10 w-100 card shadow position-absolute top-0 start-0 p-0 d-none overflow-hidden" id="resultDiv" style={{ zIndex: "1050", maxHeight: "60vh", overflowY: "auto" }}></div>
-    {" "}
+                    {" "}
                   </div>
-    {" "}
+                  {" "}
                 </form>
-    {" "}
+                {" "}
               </div>
-    {" "}
+              {" "}
             </div>
-    {" "}
+            {" "}
             <div className="rbt-separator-mid">{" "}</div>
-    {" "}
+            {" "}
           </div>
-    {" "}
+          {" "}
         </div>
-    {" "}
-    {/* End Search Dropdown  */}
-    {" "}
+        {" "}
+        {/* End Search Dropdown  */}
+        {" "}
       </div>
-    {" "}
+      {" "}
       <a className="rbt-close_side_menu" href="javascript:void(0);"></a>
-    {" "}
+      {" "}
     </header>
   );
 }

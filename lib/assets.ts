@@ -28,8 +28,11 @@ export const STYLESHEETS: string[] = [
   // DROPPED: glightbox.min.css — zero .glightbox elements site-wide.
   '/assets/css/styles.css',
   // Generated. Re-emits inline style="... !important" blocks that React's style
-  // prop cannot express. MUST stay last so its rules win the cascade.
+  // prop cannot express. MUST stay after styles.css so its rules win the cascade.
   '/assets/css/pixel-inline.css',
+  // Hand-written fixes to the theme. Last so plain specificity beats styles.css
+  // without !important; its selectors do not overlap pixel-inline's [data-pxs].
+  '/assets/css/site-overrides.css',
 ];
 
 /**

@@ -54,6 +54,32 @@ window.Jodit = window.Jodit || {
 };
 `;
 
+/**
+ * main.js calls eduJs.selectPicker() -> $("select").selectpicker() with no
+ * existence guard, but bootstrap-select's JS is not loaded — only its CSS is
+ * (lib/assets.ts). $.fn.selectpicker is therefore undefined, the call throws a
+ * TypeError, and the initializer list aborts at that line. Everything after it
+ * silently never binds: headerTopActivation, topbarExpend (the mobile top-bar
+ * "+"), magnificPopupActivation, showMoreBtn, courseActionBottom, contactForm,
+ * player, searchValue, moveAnimation and nine more — 18 features in total.
+ *
+ * The reference site has the same defect: it does not load bootstrap-select
+ * either, so those features are dead there too. Adding the real plugin would
+ * restyle every <select> on the site and diverge from the reference, so the
+ * stub restores the initializer chain while leaving selects as native controls
+ * — which is exactly what both sites already render.
+ *
+ * Must be injected after jQuery exists but before main.js runs.
+ */
+const SELECTPICKER_STUB = `
+(function () {
+  var $ = window.jQuery;
+  if ($ && $.fn && !$.fn.selectpicker) {
+    $.fn.selectpicker = function () { return this; };
+  }
+})();
+`;
+
 /** Queues late DOMContentLoaded/load listeners; flushed by READY_FLUSH. */
 const READY_SHIM = `
 (function () {
@@ -180,6 +206,9 @@ export default function VendorScripts() {
         // run before the rest of the chain has loaded.
         if (!held && window.jQuery?.holdReady) {
           window.jQuery.holdReady(true);
+          // Same moment: jQuery now exists and main.js has not run yet, which is
+          // the only window in which the selectpicker stub can be installed.
+          injectInline(SELECTPICKER_STUB);
           held = true;
         }
       }

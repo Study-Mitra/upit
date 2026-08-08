@@ -1,0 +1,63 @@
+/* Site-owned corrections to the theme's stylesheet.
+ *
+ * styles.css is the reference theme, kept as close to verbatim as possible so it
+ * can be re-derived. Fixes belong here instead, where they are attributable and
+ * survive a re-import. Loads after styles.css, so plain specificity is enough
+ * and !important is not needed.
+ */
+
+/* ---------------------------------------------------------------------------
+ * Header top bar on mobile
+ *
+ * The theme collapses .rbt-header-top to one 32px row and reveals the rest via
+ * the "+" (.topbar-expend-button). Two defects showed up with the rebrand's
+ * longer contact details:
+ *
+ * 1. The contact list wraps onto a second row that the collapsed bar then cut
+ *    through, rendering a line of text sliced in half.
+ *
+ *    Clipping cannot fix this on its own. The clip was applied to
+ *    .rbt-header-top (46px, including its own 7px vertical padding) while the
+ *    collapsed content box is the 32px .top-expended-wrapper; moving the clip to
+ *    the wrapper narrows the leak from 11px to 4px but does not close it,
+ *    because row two starts at y35 and the wrapper's content box ends at y39.
+ *    No fixed height lands on a row boundary for every viewport width and every
+ *    length of address, so the collapsed row is defined by what is displayed
+ *    rather than by where a box happens to be cut: the first item only, with the
+ *    rest revealed by "+".
+ *
+ *    Which item wrapped was width-dependent and therefore inconsistent — the
+ *    email dropped to row two at 360px but not at 375px. Showing exactly one
+ *    item is the same on every phone.
+ *
+ *    The wrapper still gets overflow:hidden, which stops the second column
+ *    (social links) showing through while collapsed. main.js sets an explicit
+ *    pixel height on the wrapper when opening (height = .top-expended-inner
+ *    outerHeight), so the full list fits once expanded.
+ *
+ * 2. .top-bar-expended is absolutely positioned at right:25px over the same
+ *    strip, so contact text ran underneath the "+" button. The inner row now
+ *    reserves that space.
+ *
+ * Covers both breakpoints where the theme turns collapsing on (<=767px and
+ * 768-991px).
+ * ------------------------------------------------------------------------- */
+@media only screen and (max-width: 991px) {
+  .rbt-header-top.rbt-header-top-1.top-expended-activation .top-expended-wrapper {
+    overflow: hidden;
+  }
+
+  /* 41px = the button's 16px width + its 25px offset from the right edge;
+     46px leaves a little clearance. */
+  .rbt-header-top.rbt-header-top-1.top-expended-activation .top-expended-inner {
+    padding-right: 46px;
+  }
+
+  /* Collapsed: one item, so no row can be cut. "+" restores the rest. */
+  .rbt-header-top.rbt-header-top-1.top-expended-activation:not(.active)
+    .rbt-information-list
+    > li
+    ~ li {
+    display: none;
+  }
+}

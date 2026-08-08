@@ -63,9 +63,17 @@ try {
 } catch (e) {
   console.error(`\nCannot reach the TARGET database: ${e.message.split('\n')[0]}`);
   console.error(
-    'If this is Atlas and the error is a selection timeout, the usual cause is\n' +
-      'that this machine is not in Network Access. A wrong password fails fast\n' +
-      'with "bad auth" instead.'
+    'A selection timeout means the driver never completed a handshake. It is NOT\n' +
+      'an authentication problem — a wrong password fails fast with "bad auth".\n' +
+      'In order of likelihood:\n' +
+      '  1. This network blocks MongoDB on port 27017. Common on office and some\n' +
+      '     ISP networks: the TCP connect succeeds through a proxy but the TLS\n' +
+      '     handshake is dropped. Test by switching networks (phone hotspot) and\n' +
+      '     confirming your public IP actually changed — macOS keeps using Wi-Fi\n' +
+      '     unless the old interface is turned off.\n' +
+      '  2. The cluster is paused. The Atlas dashboard shows Resume rather than a\n' +
+      '     green Active dot.\n' +
+      '  3. The IP is not in Atlas Network Access.'
   );
   await src.close();
   process.exit(1);

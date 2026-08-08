@@ -30,11 +30,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files — .env holds real credentials and must never be committed.
+# lib/env.mjs reads .env.local > .env.development > .env, same order as Next.
 .env*
-# ...except the template. It holds no secrets and documents the variables that
-# lib/mongodb.ts and lib/env.mjs now require rather than defaulting.
-!.env.example
 
 # vercel
 .vercel

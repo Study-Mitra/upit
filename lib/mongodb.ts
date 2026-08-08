@@ -4,7 +4,7 @@ function requireEnv(name: string): string {
   const value = process.env[name];
   if (!value) {
     throw new Error(
-      `${name} is not set. Copy .env.example to .env.local and fill it in ` +
+      `${name} is not set. Add it to .env ` +
         '(or set it in the deploy environment).'
     );
   }

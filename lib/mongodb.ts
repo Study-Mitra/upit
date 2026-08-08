@@ -1,15 +1,18 @@
 import { MongoClient, type Db } from 'mongodb';
 
-/**
- * Cached MongoDB connection.
- *
- * Next dev reloads modules on every edit, which would otherwise open a new
- * connection pool per reload until the server refuses them. The client promise
- * is stashed on globalThis so it survives HMR.
- */
+function requireEnv(name: string): string {
+  const value = process.env[name];
+  if (!value) {
+    throw new Error(
+      `${name} is not set. Copy .env.example to .env.local and fill it in ` +
+        '(or set it in the deploy environment).'
+    );
+  }
+  return value;
+}
 
-const uri = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const dbName = process.env.MONGODB_DB ?? 'upitcollege';
+const uri = requireEnv('MONGODB_URI');
+const dbName = requireEnv('MONGODB_DB');
 
 declare global {
   // eslint-disable-next-line no-var

@@ -16,9 +16,8 @@
  * stored output against what the running app serves.
  */
 import { MongoClient } from 'mongodb';
+import { MONGODB_URI as URI, MONGODB_DB as DB } from '../lib/env.mjs';
 
-const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const DB = process.env.MONGODB_DB ?? 'upitcollege';
 const APPLY = process.argv.includes('--apply');
 
 function esc(value) {

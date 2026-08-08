@@ -15,8 +15,8 @@
  * lose both.
  */
 import { MongoClient } from 'mongodb';
+import { MONGODB_URI as URI } from '../lib/env.mjs';
 
-const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
 // Literal names, kept out of any global find/replace: a sweep that rewrote OLD
 // to the new value would make --drop-old destroy the database it just created.
 const OLD = ['srm','flexilearn'].join('');

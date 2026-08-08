@@ -10,10 +10,9 @@
 import { chromium } from '@playwright/test';
 import { MongoClient } from 'mongodb';
 import bcrypt from 'bcryptjs';
+import { MONGODB_URI as URI, MONGODB_DB as DB } from '../lib/env.mjs';
 
 const BASE = process.argv[2] ?? process.env.LOCAL_ORIGIN ?? 'http://localhost:3000';
-const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const DB = process.env.MONGODB_DB ?? 'upitcollege';
 const EMAIL = 'test-only@example.invalid';
 const PASSWORD = 'correct-horse-battery-staple';
 const SLUG = 'zz-test-course';

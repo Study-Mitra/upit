@@ -18,9 +18,8 @@
  */
 import { MongoClient } from 'mongodb';
 import * as cheerio from 'cheerio';
+import { MONGODB_URI as URI, MONGODB_DB as DB } from '../lib/env.mjs';
 
-const URI = process.env.MONGODB_URI ?? 'mongodb://127.0.0.1:27017';
-const DB = process.env.MONGODB_DB ?? 'upitcollege';
 const APPLY = process.argv.includes('--apply');
 
 const client = await new MongoClient(URI, { serverSelectionTimeoutMS: 5000 }).connect();

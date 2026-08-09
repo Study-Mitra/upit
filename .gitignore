@@ -34,6 +34,16 @@ yarn-error.log*
 # lib/env.mjs reads .env.local > .env.development > .env, same order as Next.
 .env*
 
+# local working artifacts
+# Database exports land here. They contain the leads collection (real names,
+# phone numbers, email addresses) and the admin bcrypt hash, so this directory
+# must never reach a repository — least of all a public one.
+/backups/
+
+# one-off debug scripts (scripts/check-atlas.mjs is the kept, committed one)
+*.tmp.mjs
+*.tmp.*
+
 # vercel
 .vercel
 

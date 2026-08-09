@@ -51,14 +51,9 @@ node scripts/seed-admin.mjs --email you@site.com # a different account
 Then sign in at `/admin/login`.
 
 Mind the dev-server port: `next dev` moves up from 3000 when it is taken, so the
-admin is often at `http://localhost:3001/admin`. The test scripts take the origin
-as their first argument and refuse to run against a different app rather than
-reporting confusing failures:
-
-```bash
-node tests/admin-login.mjs http://localhost:3001
-node tests/compare-flow.mjs http://localhost:3001
-```
+admin is sometimes at `http://localhost:3001/admin`. The scripts in `scripts/`
+take the origin as an argument for the same reason — pointing one at whichever
+app happens to hold 3000 produces confusing failures rather than an honest error.
 
 Admin pages live under `app/(admin)/admin/**`. The `(admin)` route group
 contributes no URL segment, so the extra `admin/` folder is what produces the

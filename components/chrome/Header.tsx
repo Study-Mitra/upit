@@ -72,7 +72,7 @@ export default function Header() {
                       {" "}
                       <li>
                         {" "}
-                        <a href="https://www.facebook.com/profile.php?id=61590632371785" target="_blank">
+                        <a href="https://www.facebook.com/people/Mehra-Education-Pvt-Ltd/61551991115367/?locale=mk_MK#" target="_blank">
                           <i className="fab fa-facebook-f"></i>
                         </a>
                         {" "}

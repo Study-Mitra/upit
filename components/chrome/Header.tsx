@@ -26,10 +26,10 @@ export default function Header() {
                       {" "}
                       <li>
                         {" "}
-                        <a href="tel:+91 9818031375">
+                        <a href="tel:+91 8796216667">
                           {" "}
                           <i className="feather-phone"></i>
-                          {" +91 9818031375 "}
+                          {" +91 8796216667 "}
                         </a>
                         {" "}
                       </li>

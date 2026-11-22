@@ -35,7 +35,7 @@ export default function Footer() {
                 <ul className="social-icon social-default justify-content-start">
     {" "}
                   <li>
-                    <a href="https://www.facebook.com/profile.php?id=61590632371785" target="_blank">
+                    <a href="https://www.facebook.com/mehrastudypoint" target="_blank">
     {" "}
                       <i className="feather-facebook"></i>
                     </a>
